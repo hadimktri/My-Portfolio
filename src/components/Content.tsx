@@ -3,6 +3,7 @@ import Intro from "./Intro";
 import Education from "./Education";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import ContactMe from "./ContactMe";
 
 export default function Content() {
   return (
@@ -12,6 +13,7 @@ export default function Content() {
       <Education />
       <Projects />
       <Experience />
+      <ContactMe />
     </div>
   );
 }

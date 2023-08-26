@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <div className="pl-20 my-20 flex flex-col w-full text-gray-300">
       <div className="flex items-center justify-start w-full">
-        <h2 className="text-xl ">
+        <h2 className="text-xl">
           <span className="text-teal-400 text-md tracking-widest ">03-</span>
           Some Things I've Built
         </h2>
@@ -30,8 +30,10 @@ export default function Projects() {
       <div className="mt-[150px] flex justify-between">
         <div className="w-1/2 flex flex-col gap-3">
           <div className="flex gap-2">
-            <div className="cursor-pointer hover:scale-125">
-              <TbBrandGithub size={25} />
+            <div className=" hover:scale-125">
+              <a href="https://github.com/hadimktri/Full-Stack" target="_blank">
+                <TbBrandGithub size={25} />
+              </a>
             </div>
             <h2 className="text-xl text-violet-200 font-bold tracking-widest">
               Technologies used in this app
@@ -112,11 +114,12 @@ export default function Projects() {
             <li>
               App is
               <span className="text-teal-400 mx-1">fully responsive</span>
-              for mobile, tablet, pc, and larg screens.
+              in mobile, tablet, pc, and larg screens.
             </li>
           </ul>
         </div>
       </div>
+      <div id="Experience" />
     </div>
   );
 }

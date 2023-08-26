@@ -83,6 +83,7 @@ export default function About() {
           className=" object-cover m-10 w-60 h-60 rounded-full border-solid border-8 border-teal-100 p-2 box-content border-opacity-30 "
         />
       </div>
+      <div id="Education" />
     </div>
   );
 }

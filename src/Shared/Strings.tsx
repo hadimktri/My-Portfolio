@@ -7,7 +7,7 @@ export default {
     skills: "Here are a few technologies I've been working with recently:",
   },
 
-  navList: ["About", "Education", "Experience", "Work", "Contact"],
+  navList: ["About", "Education", "Projects", "Experience", "Contact"],
 
   INTRO:
     "I'm a Vancouver-based software engineer who specializes in building and designing exceptional online experiences. Currently, I'm focused on the newest Web development technologies",
