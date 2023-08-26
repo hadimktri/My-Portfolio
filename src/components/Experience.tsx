@@ -20,6 +20,7 @@ export default function Experience() {
       logo: "/teaching.png",
     },
   ];
+  
   return (
     <div className="pl-20 my-20 flex flex-col items-center w-full">
       <div className="flex items-center justify-start w-full">

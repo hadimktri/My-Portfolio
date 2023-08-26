@@ -10,7 +10,7 @@ export default {
   navList: ["About", "Education", "Experience", "Work", "Contact"],
 
   INTRO:
-    "I'm a Vancouver_based software engineer who specializes in building and designing exeptional online experiences.\n Currently, I'm focused on newest Web devolepment tecnologies",
+    "I'm a Vancouver-based software engineer who specializes in building and designing exceptional online experiences. Currently, I'm focused on the newest Web development technologies",
 
   Education: [
     {
@@ -32,6 +32,7 @@ export default {
       school: "Azad Univesity of Mianeh, Mianeh, Iran.",
     },
   ],
+
   FullStackProject: {
     description:
       "Front-End is written in React js and Back-End in Node js and JWT is used for the user authorization and authentication ",
