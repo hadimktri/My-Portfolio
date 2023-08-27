@@ -3,30 +3,30 @@ import { TbBrandGithub } from "react-icons/tb";
 
 export default function WeatherApp() {
   return (
-    <div className="mt-10 flex flex-col items-center tracking-widest">
-      <div className="mt-20 self-start">
-        <div className="flex mb-5">
+    <div className="flex flex-col items-center gap-5 ">
+      <div className="mt-16 md:w-10/12 ">
+        <div className="flex">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />
-          <h2 className="text-xl">Weather App</h2>
+          <h2 className="text-lg font-bold text-gray-300">Weather App</h2>
         </div>
+        <img
+          src="src/assets/weather.png"
+          alt="project-1"
+          className=" mt-5 rounded"
+        />
       </div>
-      <img
-        src="src/assets/weather.png"
-        alt="project-1"
-        className="w-3/4 my-5 rounded"
-      />
-      <div className="mt-10 flex tracking-widest w-10/12 ">
-        <div className="w-1/2 flex flex-col gap-3">
+      <div className="mt-10 flex flex-col md:w-10/12 md:flex-row">
+        <div className="md:w-1/2 flex flex-col gap-3">
           <div className="flex gap-2">
             <div className=" hover:scale-125">
               <a
-                href="https://github.com/hadimktri/NODE_MongoDb_Express_Passport-Google_Ejs"
+                href="https://github.com/hadimktri/Weather-App_React_Typescript_Vite"
                 target="_blank"
               >
-                <TbBrandGithub size={25} />
+                <TbBrandGithub size={25} color="#d1d5db" />
               </a>
             </div>
-            <h2 className="text-xl text-violet-200 font-bold ">
+            <h2 className="text-xl text-gray-300 font-bold ">
               Technologies used in this app
             </h2>
           </div>
@@ -46,14 +46,18 @@ export default function WeatherApp() {
             .
           </h5>
         </div>
-        <div className="w-1/2 pl-2">
-          <h2 className="text-xl text-violet-200 font-bold  mb-3">About App</h2>
+        <div className="md:w-1/2">
+          <h2 className="text-xl text-gray-300 font-bold my-4 md:my-0">About App</h2>
           <ul className="flex flex-col gap-3">
             <li>
               Users will be able to search for a city by inserting partial or
-              full city names. A debounced selection drop-down is intended to enhance the user interface experience to select the city properly.
+              full city names. A debounced selection drop-down is intended to
+              enhance the user interface experience to select the city properly.
             </li>
-            <li>Bottom line of the application lists the forecast for upcoming 7 days.</li>
+            <li>
+              Bottom line of the application lists the forecast for upcoming 7
+              days.
+            </li>
           </ul>
         </div>
       </div>

@@ -2,18 +2,18 @@ import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb";
 import { MdOutlineMail } from "react-icons/md";
 export default function ContactMe() {
   return (
-    <div className="pl-20 my-20 flex flex-col items-center w-full  h-[500px]  text-gray-300">
-      <div className="flex items-center justify-start w-full">
-        <h2 className="text-xl">
-          <span className="text-teal-400 text-md tracking-widest">05-</span>
+    <div className="p-4 w-full my-16 md:ml-40 md:w-3/4 flex flex-col items-center ">
+      <div className="flex items-center self-start">
+        <h2 className="md:text-xl font-medium">
+          <span className="text-teal-400 ">05-</span>
           Contact Me
         </h2>
-        <div className=" border-b-[1px] border-gray-700 w-40 m-3 mb-1"></div>
-        <div className="w-1 h-1 bg-gray-600 rounded-full mt-2"></div>
+        <div className=" border-b-[1px] border-gray-700 w-32 m-3 mb-1" />
+        <div className="w-1 h-1 bg-gray-600 rounded-full mt-2" />
       </div>
-      <div className="flex flex-col self-start ml-16 mt-16 gap-5">
+      <div className="flex flex-col self-center mt-16 gap-5 text-sm md:w-4/5 lg:w-3/4 ">
         <a
-          className=" hover:scale-105  flex gap-2"
+          className=" hover:scale-105  flex  gap-2"
           href="mailto:hadimokhtr@gmail.com"
           target="_blank"
         >

@@ -3,20 +3,20 @@ import { TbBrandGithub } from "react-icons/tb";
 
 export default function JewelryProject() {
   return (
-    <div>
-      <div className="mt-20">
-        <div className="flex mb-5 ">
+    <div className="flex flex-col items-center gap-5 ">
+      <div className="mt-16 md:w-10/12 ">
+        <div className="flex">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />
-          <h2 className="text-xl">Jewelry Project</h2>
+          <h2 className="text-lg font-bold text-gray-300">Jewelry Project</h2>
         </div>
         <img
-          src="src/assets/jewelry.jpg"
+          src="src/assets/weather.png"
           alt="project-1"
-          className="w-3/4 rounded"
+          className=" my-5 rounded"
         />
       </div>
-      <div className="mt-10 flex justify-between">
-        <div className="w-1/2 flex flex-col gap-3">
+      <div className="mt-10 flex flex-col md:flex-row md:w-10/12 ">
+        <div className="md:w-1/2 flex flex-col gap-3">
           <div className="flex gap-2">
             <div className=" hover:scale-125">
               <a
@@ -26,35 +26,33 @@ export default function JewelryProject() {
                 <TbBrandGithub size={25} />
               </a>
             </div>
-            <h2 className="text-xl text-violet-200 font-bold tracking-widest">
+            <h2 className="text-xl text-gray-300 font-bold ">
               Technologies used in this app
             </h2>
           </div>
           <h5>
             Front-End:
-            <span className="text-teal-400 ml-1 tracking-widest">EJS</span>
+            <span className="text-teal-400 ml-1 ">EJS</span>
           </h5>
           <h5>
             Back-End:
-            <span className="text-teal-400 ml-1 tracking-widest">Node js</span>
+            <span className="text-teal-400 ml-1 ">Node js</span>
           </h5>
           <h5>
             Styling:
-            <span className="text-teal-400 ml-1 tracking-widest">
-              Bootstrap
-            </span>
+            <span className="text-teal-400 ml-1 ">Bootstrap</span>
           </h5>
           <h5>
             DataBase:
-            <span className="text-teal-400 ml-1 tracking-widest">MongoDb</span>
+            <span className="text-teal-400 ml-1 ">MongoDb</span>
           </h5>
           <h5>
             Authentication:
-            <span className="text-teal-400 ml-1 tracking-widest">Passport</span>
+            <span className="text-teal-400 ml-1 ">Passport</span>
           </h5>
         </div>
-        <div className="w-1/2 pl-2">
-          <h2 className="text-xl text-violet-200 font-bold tracking-widest mb-3">
+        <div className="md:w-1/2 ">
+          <h2 className="text-xl text-gray-300 font-bold  my-4 md:my-0">
             About App
           </h2>
           <ul className="flex flex-col gap-3">

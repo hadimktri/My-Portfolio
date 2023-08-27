@@ -1,9 +1,9 @@
 export default {
   about: {
-    link: "About Me.",
+    link: "About Me",
     name: "My name is Hadi.",
     title: "I’m a FrontEnd Developer based in Vancouver.",
-    desc: "I am a passionate and dedicated UI/UX designer with a strong focus on creating exceptional user experiences. I thrive on transforming complex ideas into intuitive and visually appealing designs. With a keen eye for detail and a user-centered approach, I strive to deliver impactful solutions that engage and delight users. Let's collaborate to bring your digital products to life!",
+    desc: "I'm a passionate and dedicated UI/UX designer with a strong focus on creating exceptional user experiences. I thrive on transforming complex ideas into intuitive and visually appealing designs. With a keen eye for detail and a user-centered approach, I strive to deliver impactful solutions that engage and delight users. Let's collaborate to bring your digital products to life!",
     skills: "Here are a few technologies I've been working with recently:",
   },
 

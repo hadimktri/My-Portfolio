@@ -3,90 +3,78 @@ import { TbBrandGithub } from "react-icons/tb";
 
 export default function PostProject() {
   return (
-    <div>
-      <div className="flex items-center justify-start w-full">
-        <h2 className="text-xl">
-          <span className="text-teal-400 text-md tracking-widest ">03-</span>
-          Some Things I've Built
-        </h2>
-        <div className=" border-b-[1px] border-gray-700 w-40 m-3 mb-1"></div>
-        <div className="w-1 h-1 bg-gray-600 rounded-full mt-2"></div>
-      </div>
-      <div className="mt-20 relative">
-        <div className="flex mb-5 ">
+    <div className="flex flex-col items-center gap-5 md:w-4/5">
+      <div className="mt-16 relative">
+        <div className="flex mb-5">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />
-          <h2 className="text-xl">Full-Stack Project </h2>
+          <h2 className="text-lg font-bold text-gray-300">
+            Full-Stack Project
+          </h2>
         </div>
-        <img
-          src="src/assets/p-1.jpg"
-          alt="project-1"
-          className="w-3/4 rounded"
-        />
         <img
           src="src/assets/p-1-w.jpg"
           alt="project-1"
-          className="w-3/4 rounded absolute z-20 top-32 mt-11 right-7"
+          className="md:w-4/5  rounded"
+        />
+        <img
+          src="src/assets/p-1.jpg"
+          alt="project-1"
+          className=" rounded absolute z-20 md:w-4/5 top-32 mt-11 md:right-20"
         />
       </div>
-      <div className="mt-[150px] flex justify-between">
-        <div className="w-1/2 flex flex-col gap-3">
+      <div className="mt-[150px] flex flex-col md:flex-row justify-between gap-10">
+        <div className="md:w-1/2 flex flex-col gap-3">
           <div className="flex gap-2">
             <div className=" hover:scale-125">
               <a href="https://github.com/hadimktri/Full-Stack" target="_blank">
                 <TbBrandGithub size={25} />
               </a>
             </div>
-            <h2 className="text-xl text-violet-200 font-bold tracking-widest">
+            <h2 className="text-xl text-gray-300 font-bold ">
               Technologies used in this app
             </h2>
           </div>
           <h5>
             Front-End:
-            <span className="text-teal-400 ml-1 tracking-widest">
+            <span className="text-teal-400 ml-1 ">
               React
-              <span className="text-gray-300 ml-1 tracking-widest">
+              <span className="text-gray-300 text-sm ml-1 ">
                 (Typescript, React-Routing, Zod, Zustand).
               </span>
             </span>
           </h5>
           <h5>
             Back-End:
-            <span className="text-teal-400 ml-1 tracking-widest">
+            <span className="text-teal-400 ml-1 ">
               Node js
-              <span className="text-gray-300 ml-1 tracking-widest">
+              <span className="text-gray-300 text-sm ml-1 ">
                 (Typescript, Express, Prisma, Node Mailer).
               </span>
             </span>
           </h5>
           <h5>
             Styling:
-            <span className="text-teal-400 ml-1 tracking-widest">
-              Mantine Ui.
-            </span>
+            <span className="text-teal-400 ml-1 ">Mantine Ui.</span>
           </h5>
           <h5>
             DataBase:
-            <span className="text-teal-400 ml-1 tracking-widest">
-            PostgreSQL
-              <span className="text-gray-300 ml-1 tracking-widest">
-                (Prisma).
-              </span>
+            <span className="text-teal-400 ml-1 ">
+              PostgreSQL
+              <span className="text-gray-300 text-sm ml-1 ">(Prisma).</span>
             </span>
           </h5>
           <h5>
             Authentication:
-            <span className="text-teal-400 ml-1 tracking-widest">
+            <span className="text-teal-400 ml-1 ">
               JWT
-              <span className="text-gray-300 ml-1 tracking-widest">
+              <span className="text-gray-300 text-sm ml-1 ">
                 (JSON Web Token).
               </span>
             </span>
           </h5>
         </div>
-        <div className="w-1/2 pl-2">
-          <h2 className="text-xl text-violet-200 font-bold tracking-widest mb-3">
-            About App
-          </h2>
+        <div className="md:w-1/2 ">
+          <h2 className="text-xl text-gray-300 font-bold  mb-3">About App</h2>
           <ul className="flex flex-col gap-3">
             <li>
               Registered user is able to
@@ -120,7 +108,6 @@ export default function PostProject() {
           </ul>
         </div>
       </div>
-      
     </div>
   );
 }

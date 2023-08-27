@@ -1,5 +1,5 @@
-import About from "./About";
 import Intro from "./Intro";
+import About from "./About";
 import Education from "./Education";
 import Projects from "./Projects";
 import Experience from "./Experience";
@@ -7,7 +7,7 @@ import ContactMe from "./ContactMe";
 
 export default function Content() {
   return (
-    <div className="mt-10 flex flex-col items-center px-40">
+    <div className="flex flex-col tracking-wide items-center w-screen  text-gray-400">
       <Intro />
       <About />
       <Education />
