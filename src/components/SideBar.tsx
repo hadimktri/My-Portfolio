@@ -2,7 +2,7 @@ import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb";
 export default function SideBar() {
   return (
     <div className="hidden w-24 fixed md:flex flex-col justify-end items-center h-full">
-      <h2 className="-rotate-90 text-gray-300">FiND ME</h2>
+      <h2 className="-rotate-90 text-gray-300 tracking-widest">FiND ME</h2>
       <div className="flex flex-col justify-center items-center mt-32 gap-10">
         <a
           className=" hover:scale-125"
