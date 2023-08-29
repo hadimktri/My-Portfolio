@@ -1,25 +1,23 @@
 import { TbMenu2, TbMoon, TbSunHigh, TbX } from "react-icons/tb";
 import Strings from "../Shared/Strings";
-import { useState } from "react";
-import useColorMode from "../hooks/useColorMode";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../App";
+
 export default function Header() {
+  const { colorMode, toggleTheme } = useContext(ThemeContext);
   const [open, setOpen] = useState(false);
   const handleBurger = () => {
     setOpen((prev) => !prev);
-  };
-  const [colorMode, setColorMode] = useColorMode();
-  const toggleTheme = () => {
-    setColorMode(colorMode === "light" ? "dark" : "light");
   };
 
   return (
     <div
       className="w-full flex justify-between fixed z-50  tracking-wide
-    bg-gradient-to-r from-[#0a1526] from 5% via-[#0a244b] via-30% to-[#0a1526] to-90%"
+      bg-slate-300 dark:bg-gradient-to-r from-[#0a1526] from 5% via-[#0a244b] via-30% to-[#0a1526] to-90%"
     >
       <div className="h-16 w-24 flex justify-center">
         <a
-          className="font-bold text-3xl self-center ml-[-24px] md:ml-0 mt-1 text-gray-300"
+          className="font-bold text-3xl self-center ml-[-24px] md:ml-0 mt-1 hover:scale-125"
           href="#Home"
         >
           H
@@ -32,25 +30,25 @@ export default function Header() {
         >
           <li
             onClick={toggleTheme}
-            className="cursor-pointer md:order-last md:self-center mt-1"
+            className="cursor-pointer md:order-last md:self-center mt-1 hover:scale-110"
           >
             {colorMode === "dark" ? (
-              <TbSunHigh color="yellow" size={20} />
+              <TbSunHigh color="#fcd34d" size={20} />
             ) : (
-              <TbMoon color="#2dd4bf" size={20} />
+              <TbMoon color="#3b82f6" size={20} />
             )}
           </li>
           {Strings.navList.map((nav, idx) => (
             <li
               key={idx}
-              className=" text-sm text-gray-300 hover:border-b-[1px] mt-2 hover:scale-105"
+              className=" text-sm hover:border-b-[1px] mt-2 hover:scale-110 border-[#334155] dark:border-[#cbd5e1]"
             >
               <a href={`#${nav}`}>{nav}</a>
             </li>
           ))}
           <li>
             <a
-              className="text-sm hover:border-b-[1px] text-gray-300"
+              className="text-sm hover:border-b-[1px] border-[#334155] dark:border-[#cbd5e1]"
               href="src/assets/Resume-Hadi Mokhtari.pdf"
               target="_blank"
             >

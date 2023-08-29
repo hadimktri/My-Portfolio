@@ -13,8 +13,8 @@ export default function About() {
   return (
     <div className="px-4 w-full mt-40 md:ml-40 md:w-3/4 flex flex-col items-center ">
       <div className="flex items-center self-start">
-        <h2 className="md:text-xl" >
-          <span className="text-teal-400 ">01-</span>
+        <h2 className="md:text-xl">
+          <span className=" text-teal-500 dark:text-teal-400 ">01-</span>
           {Strings.about.link}
         </h2>
         <div className=" border-b-[1px] border-gray-700 w-32 m-3 mb-1" />
@@ -27,19 +27,23 @@ export default function About() {
       >
         <img
           src="src/assets/hadi.jpg"
-          className="object-cover w-60 h-60 rounded-full border-solid border-8 border-teal-200 p-2 box-content border-opacity-30"
+          className="object-cover w-60 h-60 rounded-full border-solid border-8 p-2 box-content 
+          border-teal-300 border-opacity-30
+          dark:border-teal-200 dark:border-opacity-30"
         />
         <div className=" mt-10 flex flex-col gap-5">
-          <div  >
-            <h2 className="text-gray-300 text-2xl font-bold">
+          <div>
+            <h2 className="text-slate-700 dark:text-slate-300 text-2xl font-bold">
               {Strings.about.name}
             </h2>
-            <h2 className="text-xl text-teal-500 font-bold flex mt-4">
+            <h2 className="text-xl text-teal-500 dark:text-teal-400 font-bold flex mt-4">
               {Strings.about.title}
             </h2>
           </div>
           <h2 className="sm:w-3/4 md:w-full">{Strings.about.desc}</h2>
-          <h2 className="text-gray-300 font-bold">{Strings.about.skills}</h2>
+          <h2 className="text-slate-700 dark:text-slate-300 font-bold">
+            {Strings.about.skills}
+          </h2>
           <div className="flex justify-between w-4/5">
             <ul className="flex flex-col gap-2">
               <li className="flex gap-1 ">

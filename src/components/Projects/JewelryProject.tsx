@@ -7,10 +7,10 @@ export default function JewelryProject() {
       <div className="mt-16 md:w-10/12 ">
         <div className="flex">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />
-          <h2 className="text-lg font-bold text-gray-300">Jewelry Project</h2>
+          <h2 className="text-lg font-bold text-slate-700 dark:text-slate-300">Jewelry Project</h2>
         </div>
         <img
-          src="src/assets/weather.png"
+          src="src/assets/jewelry.jpg"
           alt="project-1"
           className=" my-5 rounded"
         />
@@ -26,51 +26,51 @@ export default function JewelryProject() {
                 <TbBrandGithub size={25} />
               </a>
             </div>
-            <h2 className="text-xl text-gray-300 font-bold ">
+            <h2 className="text-xl text-slate-700 dark:text-slate-300 font-bold ">
               Technologies used in this app
             </h2>
           </div>
           <h5>
             Front-End:
-            <span className="text-teal-400 ml-1 ">EJS</span>
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">EJS</span>
           </h5>
           <h5>
             Back-End:
-            <span className="text-teal-400 ml-1 ">Node js</span>
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">Node js</span>
           </h5>
           <h5>
             Styling:
-            <span className="text-teal-400 ml-1 ">Bootstrap</span>
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">Bootstrap</span>
           </h5>
           <h5>
             DataBase:
-            <span className="text-teal-400 ml-1 ">MongoDb</span>
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">MongoDb</span>
           </h5>
           <h5>
             Authentication:
-            <span className="text-teal-400 ml-1 ">Passport</span>
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">Passport</span>
           </h5>
         </div>
         <div className="md:w-1/2 ">
-          <h2 className="text-xl text-gray-300 font-bold  my-4 md:my-0">
+          <h2 className="text-xl text-slate-700 dark:text-slate-300 font-bold  my-4 md:my-0">
             About App
           </h2>
           <ul className="flex flex-col gap-3">
             <li>
               Registered user is able to
-              <span className="text-teal-400 mx-1">
+              <span className=" text-teal-500 dark:text-teal-400 mx-1">
                 Select, Add to card, delete, order
               </span>
               product.
             </li>
             <li>
               Users will be able to register with email and password and also
-              just with a <span className="text-teal-400 mr-1">Gmail </span>
+              just with a <span className=" text-teal-500 dark:text-teal-400 mr-1">Gmail </span>
               account.
             </li>
             <li>
               User will be able to
-              <span className="text-teal-400 mx-1">Edit profile</span>with
+              <span className=" text-teal-500 dark:text-teal-400 mx-1">Edit profile</span>with
             </li>
           </ul>
         </div>

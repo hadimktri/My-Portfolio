@@ -7,7 +7,7 @@ export default function Projects() {
     <div className="p-4 w-full my-40 md:ml-40 md:w-3/4 flex flex-col items-center ">
       <div className="flex items-center self-start">
         <h2 className="md:text-xl">
-          <span className="text-teal-400 ">04-</span>
+          <span className=" text-teal-500 dark:text-teal-400 ">04-</span>
           Projects
         </h2>
         <div className=" border-b-[1px] border-gray-700 w-32 m-3 mb-1" />

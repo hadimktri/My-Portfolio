@@ -7,7 +7,7 @@ export default function PostProject() {
       <div className="mt-16 relative">
         <div className="flex mb-5">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />
-          <h2 className="text-lg font-bold text-gray-300">
+          <h2 className="text-lg font-bold text-slate-700 dark:text-slate-300">
             Full-Stack Project
           </h2>
         </div>
@@ -30,79 +30,79 @@ export default function PostProject() {
                 <TbBrandGithub size={25} />
               </a>
             </div>
-            <h2 className="text-xl text-gray-300 font-bold ">
+            <h2 className="text-xl text-slate-700 dark:text-slate-300 font-bold ">
               Technologies used in this app
             </h2>
           </div>
           <h5>
             Front-End:
-            <span className="text-teal-400 ml-1 ">
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">
               React
-              <span className="text-gray-300 text-sm ml-1 ">
+              <span className="text-slate-700 dark:text-slate-300 text-sm ml-1 ">
                 (Typescript, React-Routing, Zod, Zustand).
               </span>
             </span>
           </h5>
           <h5>
             Back-End:
-            <span className="text-teal-400 ml-1 ">
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">
               Node js
-              <span className="text-gray-300 text-sm ml-1 ">
+              <span className="text-slate-700 dark:text-slate-300 text-sm ml-1 ">
                 (Typescript, Express, Prisma, Node Mailer).
               </span>
             </span>
           </h5>
           <h5>
             Styling:
-            <span className="text-teal-400 ml-1 ">Mantine Ui.</span>
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">Mantine Ui.</span>
           </h5>
           <h5>
             DataBase:
-            <span className="text-teal-400 ml-1 ">
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">
               PostgreSQL
-              <span className="text-gray-300 text-sm ml-1 ">(Prisma).</span>
+              <span className="text-slate-700 dark:text-slate-300 text-sm ml-1 ">(Prisma).</span>
             </span>
           </h5>
           <h5>
             Authentication:
-            <span className="text-teal-400 ml-1 ">
+            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">
               JWT
-              <span className="text-gray-300 text-sm ml-1 ">
+              <span className="text-slate-700 dark:text-slate-300 text-sm ml-1 ">
                 (JSON Web Token).
               </span>
             </span>
           </h5>
         </div>
         <div className="md:w-1/2 ">
-          <h2 className="text-xl text-gray-300 font-bold  mb-3">About App</h2>
+          <h2 className="text-xl text-slate-700 dark:text-slate-300 font-bold  mb-3">About App</h2>
           <ul className="flex flex-col gap-3">
             <li>
               Registered user is able to
-              <span className="text-teal-400 mx-1">
+              <span className=" text-teal-500 dark:text-teal-400 mx-1">
                 create, update, delete, like, favorite, comment
               </span>
               posts, but will not be able to delete or edit other users' posts.
             </li>
             <li>
               Users will be able to register with email and password and also
-              just with a <span className="text-teal-400 mr-1">Gmail </span>
+              just with a <span className=" text-teal-500 dark:text-teal-400 mr-1">Gmail </span>
               account.
             </li>
             <li>
               User will be able to
-              <span className="text-teal-400 mx-1">reset Password</span>with
-              <span className="text-teal-400 mx-1">
+              <span className=" text-teal-500 dark:text-teal-400 mx-1">reset Password</span>with
+              <span className=" text-teal-500 dark:text-teal-400 mx-1">
                 Email confirmation code
               </span>
               in case of a forgotten password.
             </li>
             <li>
-              <span className="text-teal-400 mr-1">Dark / light</span> theme is
+              <span className=" text-teal-500 dark:text-teal-400 mr-1">Dark / light</span> theme is
               also added for the convinience of the user.
             </li>
             <li>
               App is
-              <span className="text-teal-400 mx-1">fully responsive</span>
+              <span className=" text-teal-500 dark:text-teal-400 mx-1">fully responsive</span>
               in mobile, tablet, pc, and larg screens.
             </li>
           </ul>
