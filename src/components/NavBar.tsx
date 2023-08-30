@@ -1,9 +1,11 @@
 import { TbMenu2, TbMoon, TbSunHigh, TbX } from "react-icons/tb";
+import { motion } from "framer-motion";
+import { navVariants } from '../utils/motion';
 import Strings from "../Shared/Strings";
 import { useState, useContext } from "react";
 import { ThemeContext } from "../App";
 
-export default function Header() {
+export default function NavBar() {
   const { colorMode, toggleTheme } = useContext(ThemeContext);
   const [open, setOpen] = useState(false);
   const handleBurger = () => {
@@ -11,11 +13,14 @@ export default function Header() {
   };
 
   return (
-    <div
-      className="w-full flex justify-between fixed z-50  tracking-wide
-      bg-slate-300 dark:bg-gradient-to-r from-[#0a1526] from 5% via-[#0a244b] via-30% to-[#0a1526] to-90%"
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      className="w-full flex justify-between fixed z-50 tracking-wide
+      bg-slate-200 dark:bg-gradient-to-r from-[#0a1526] from 5% via-[#0a244b] via-30% to-[#0a1526] to-90%"
     >
-      <div className="h-16 w-24 flex justify-center">
+      <div className="h-20 w-24 flex justify-center">
         <a
           className="font-bold text-3xl self-center ml-[-24px] md:ml-0 mt-1 hover:scale-125"
           href="#Home"
@@ -30,25 +35,28 @@ export default function Header() {
         >
           <li
             onClick={toggleTheme}
-            className="cursor-pointer md:order-last md:self-center mt-1 hover:scale-110"
+            className=" w-fit cursor-pointer md:order-last md:self-center mt-1 p-1 rounded-full
+             hover:border-[#2563eb] hover:dark:border-[#fcd34d] border-transparent border hover:border-current"
           >
-            {colorMode === "dark" ? (
-              <TbSunHigh color="#fcd34d" size={20} />
-            ) : (
-              <TbMoon color="#3b82f6" size={20} />
-            )}
+            <div>
+              {colorMode === "dark" ? (
+                <TbSunHigh color="#fcd34d" size={20} />
+              ) : (
+                <TbMoon color="#2563eb" size={20} />
+              )}
+            </div>
           </li>
           {Strings.navList.map((nav, idx) => (
             <li
               key={idx}
-              className=" text-sm hover:border-b-[1px] mt-2 hover:scale-110 border-[#334155] dark:border-[#cbd5e1]"
+              className=" text-sm md:text-base hover:border-b-[1px] mt-2 hover:scale-110 border-[#334155] dark:border-[#cbd5e1]"
             >
               <a href={`#${nav}`}>{nav}</a>
             </li>
           ))}
           <li>
             <a
-              className="text-sm hover:border-b-[1px] border-[#334155] dark:border-[#cbd5e1]"
+              className="text-sm md:text-base hover:border-b-[1px] border-[#334155] dark:border-[#cbd5e1]"
               href="src/assets/Resume-Hadi Mokhtari.pdf"
               target="_blank"
             >
@@ -56,10 +64,13 @@ export default function Header() {
             </a>
           </li>
         </ul>
-        <div onClick={handleBurger} className="md:hidden w-12 ml-4">
+        <div
+          onClick={handleBurger}
+          className="md:hidden w-12 ml-4 cursor-pointer"
+        >
           {open ? <TbX size={25} /> : <TbMenu2 size={25} />}
         </div>
       </div>
-    </div>
+    </motion.nav>
   );
 }

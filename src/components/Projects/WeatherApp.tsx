@@ -17,7 +17,7 @@ export default function WeatherApp() {
           className=" mt-5 rounded"
         />
       </div>
-      <div className="mt-10 flex flex-col md:w-10/12 md:flex-row">
+      <div className="mt-10 flex flex-col md:w-10/12 md:flex-row gap-4">
         <div className="md:w-1/2 flex flex-col gap-3">
           <div className="flex gap-2">
             <div className=" hover:scale-125">

@@ -32,23 +32,23 @@ export default function JewelryProject() {
           </div>
           <h5>
             Front-End:
-            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">EJS</span>
+            <span className=" text-teal-600 dark:text-teal-500 ml-1 ">EJS</span>
           </h5>
           <h5>
             Back-End:
-            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">Node js</span>
+            <span className=" text-teal-600 dark:text-teal-500 ml-1 ">Node js</span>
           </h5>
           <h5>
             Styling:
-            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">Bootstrap</span>
+            <span className=" text-teal-600 dark:text-teal-500 ml-1 ">Bootstrap</span>
           </h5>
           <h5>
             DataBase:
-            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">MongoDb</span>
+            <span className=" text-teal-600 dark:text-teal-500 ml-1 ">MongoDb</span>
           </h5>
           <h5>
             Authentication:
-            <span className=" text-teal-500 dark:text-teal-400 ml-1 ">Passport</span>
+            <span className=" text-teal-600 dark:text-teal-500 ml-1 ">Passport</span>
           </h5>
         </div>
         <div className="md:w-1/2 ">
@@ -58,19 +58,19 @@ export default function JewelryProject() {
           <ul className="flex flex-col gap-3">
             <li>
               Registered user is able to
-              <span className=" text-teal-500 dark:text-teal-400 mx-1">
+              <span className=" text-teal-600 dark:text-teal-500 mx-1">
                 Select, Add to card, delete, order
               </span>
               product.
             </li>
             <li>
               Users will be able to register with email and password and also
-              just with a <span className=" text-teal-500 dark:text-teal-400 mr-1">Gmail </span>
+              just with a <span className=" text-teal-600 dark:text-teal-500 mr-1">Gmail </span>
               account.
             </li>
             <li>
               User will be able to
-              <span className=" text-teal-500 dark:text-teal-400 mx-1">Edit profile</span>with
+              <span className=" text-teal-600 dark:text-teal-500 mx-1">Edit profile</span>with
             </li>
           </ul>
         </div>

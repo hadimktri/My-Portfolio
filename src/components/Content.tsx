@@ -7,7 +7,7 @@ import ContactMe from "./ContactMe";
 
 export default function Content() {
   return (
-    <div className="flex flex-col tracking-wide items-center w-screen">
+    <div className="flex flex-col tracking-wide items-center ">
       <Intro />
       <About />
       <Education />

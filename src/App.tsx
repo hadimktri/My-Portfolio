@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import Content from "./components/Content";
-import Header from "./components/Header";
+import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
 import useColorMode from "./hooks/useColorMode";
 
@@ -20,11 +20,11 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ colorMode, toggleTheme }}>
-      <div className=" text-slate-700 dark:text-slate-300 scroll-smooth">
-        <Header />
+      <div className=" text-slate-700 dark:text-slate-300 w-full h-full ">
+        <NavBar />
         <div
           className="flex
-       bg-slate-200 dark:bg-gradient-to-r from-[#0a1526] from 5% via-[#0a244b] via-30% to-[#0a1526] to-90%"
+       bg-slate-100 dark:bg-gradient-to-r from-[#0a1526] from 5% via-[#0a244b] via-30% to-[#0a1526] to-90%"
         >
           <SideBar />
           <Content />

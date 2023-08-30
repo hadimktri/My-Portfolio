@@ -6,37 +6,54 @@ import {
   TbBrandTailwind,
   TbBrandMantine,
 } from "react-icons/tb";
+
 import Strings from "../Shared/Strings";
 import { BiLogoReact } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
+
+import { motion } from "framer-motion";
+import { TypingText } from "../utils/CustomTexts";
+
+import { fadeIn, staggerContainer, } from "../utils/motion";
+
 export default function About() {
   return (
-    <div className="px-4 w-full mt-40 md:ml-40 md:w-3/4 flex flex-col items-center ">
+    <motion.div
+      variants={staggerContainer(1,1)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="px-4 w-full mt-40 md:ml-40 md:w-3/4 flex flex-col items-center "
+    >
       <div className="flex items-center self-start">
         <h2 className="md:text-xl">
-          <span className=" text-teal-500 dark:text-teal-400 ">01-</span>
-          {Strings.about.link}
+          <span className=" text-teal-600 dark:text-teal-500 ">01-</span>
         </h2>
+        <TypingText title={`${Strings.about.link}`} textStyles="md:text-xl" />
         <div className=" border-b-[1px] border-gray-700 w-32 m-3 mb-1" />
-        <div className="w-1 h-1 bg-gray-600 rounded-full mt-2" />
+        <div className="w-1 h-1 bg-teal-600 rounded-full mt-2" />
       </div>
-
       <div
         className="mt-10 flex flex-col items-center gap-5 md:w-4/5
        lg:flex-row-reverse lg:items-start xl:w-3/4"
       >
-        <img
+        <motion.img
+          variants={fadeIn("up", "tween", 0.3, 1)}
           src="src/assets/hadi.jpg"
+          alt="hadi"
           className="object-cover w-60 h-60 rounded-full border-solid border-8 p-2 box-content 
-          border-teal-300 border-opacity-30
+          border-teal-700 border-opacity-30
           dark:border-teal-200 dark:border-opacity-30"
         />
-        <div className=" mt-10 flex flex-col gap-5">
+        <motion.div
+          variants={fadeIn("up", "tween", 0.2, 0.8)}
+          className=" mt-10 flex flex-col gap-5"
+        >
           <div>
             <h2 className="text-slate-700 dark:text-slate-300 text-2xl font-bold">
               {Strings.about.name}
             </h2>
-            <h2 className="text-xl text-teal-500 dark:text-teal-400 font-bold flex mt-4">
+            <h2 className="text-xl text-teal-600 dark:text-teal-500 font-bold flex mt-4">
               {Strings.about.title}
             </h2>
           </div>
@@ -85,9 +102,9 @@ export default function About() {
               <li></li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div id="Education" />
-    </div>
+    </motion.div>
   );
 }
