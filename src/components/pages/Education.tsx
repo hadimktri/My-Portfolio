@@ -1,13 +1,13 @@
-import Strings from "../Shared/Strings";
+import Strings from "../../Shared/Strings";
 
 import { motion } from "framer-motion";
-import { TypingText } from "../utils/CustomTexts";
+import { TypingText } from "../../utils/CustomTexts";
 
-import { fadeIn, staggerContainer } from "../utils/motion";
+import { fadeIn, staggerContainer } from "../../utils/motion";
 export default function Education() {
   return (
     <motion.div
-      variants={staggerContainer(1,1)}
+      variants={staggerContainer(0,0)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}

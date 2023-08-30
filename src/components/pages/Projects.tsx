@@ -1,16 +1,16 @@
-import JewelryProject from "./Projects/JewelryProject";
-import PostProject from "./Projects/PostProject";
-import WeatherApp from "./Projects/WeatherApp";
+import JewelryProject from ".././projects/JewelryProject";
+import PostProject from ".././projects/PostProject";
+import WeatherApp from ".././projects/WeatherApp";
 
 import { motion } from "framer-motion";
-import { TypingText } from "../utils/CustomTexts";
+import { TypingText } from "../../utils/CustomTexts";
 
-import { staggerContainer } from "../utils/motion";
+import { staggerContainer } from "../../utils/motion";
 export default function Projects() {
   return (
     <>
       <motion.div
-        variants={staggerContainer(1,1)}
+        variants={staggerContainer(0, 0)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}

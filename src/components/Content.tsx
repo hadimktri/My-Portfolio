@@ -1,9 +1,9 @@
-import Intro from "./Intro";
-import About from "./About";
-import Education from "./Education";
-import Projects from "./Projects";
-import Experience from "./Experience";
-import ContactMe from "./ContactMe";
+import Intro from "./pages/Intro";
+import About from "./pages/About";
+import Education from "./pages/Education";
+import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
+import ContactMe from "./pages/ContactMe";
 
 export default function Content() {
   return (

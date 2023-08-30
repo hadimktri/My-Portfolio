@@ -1,6 +1,6 @@
-import Strings from "../Shared/Strings";
+import Strings from "../../Shared/Strings";
 
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import { slideIn, staggerContainer, textVariant } from "../../utils/motion";
 import { motion } from "framer-motion";
 
 export default function Intro() {
@@ -8,7 +8,7 @@ export default function Intro() {
     <section className={`sm:pl-16 pl-6`}>
       <div id="Home" />
       <motion.div
-        variants={staggerContainer(1,1)}
+        variants={staggerContainer(0,0)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}

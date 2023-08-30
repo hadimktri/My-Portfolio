@@ -7,19 +7,19 @@ import {
   TbBrandMantine,
 } from "react-icons/tb";
 
-import Strings from "../Shared/Strings";
+import Strings from "../../Shared/Strings";
 import { BiLogoReact } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
 
 import { motion } from "framer-motion";
-import { TypingText } from "../utils/CustomTexts";
+import { TypingText } from "../../utils/CustomTexts";
 
-import { fadeIn, staggerContainer, } from "../utils/motion";
+import { fadeIn, staggerContainer } from "../../utils/motion";
 
 export default function About() {
   return (
     <motion.div
-      variants={staggerContainer(1,1)}
+      variants={staggerContainer(0, 0)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}

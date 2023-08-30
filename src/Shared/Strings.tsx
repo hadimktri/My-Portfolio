@@ -32,6 +32,32 @@ export default {
       school: "Azad Univesity of Mianeh, Mianeh, Iran.",
     },
   ],
+  Experience: [
+    {
+      id: 1,
+      title: "Junior Frontend Developer at Varanegar Novin.",
+      year: "October 2017 – February 2019",
+      desc: "Created multiple responsive websites for mobile and desktop devices using HTML, CSS, and React. Worked closely with senior developers to Developed custom reusable web components for improved application scalability.",
+      descList: [
+        "Analyze and resolve technical and application problems",
+        "Work with project managers to ensure timely delivery of projects",
+        "Collaborate with other software developers, business analysts and software architects to plan, design, develop, test, and maintain web-based business applications",
+      ],
+    },
+    {
+      id: 2,
+      title: "Web Developer at ICAN.",
+      year: "March 2019 – September 2020",
+      desc: "Created multiple responsive websites for mobile and desktop devices using HTML, CSS, and React. Worked closely with senior developers to Developed custom reusable web components for improved application scalability.",
+      descList: [
+        "Collaborate with other software developers, business analysts and software architects to plan, design, develop, test, and maintain web-based business applications",
+        "Design, develop, and unit test applications in accordance with established standards",
+        "Analyze user needs and develop software solutions",
+        " Analyze user needs, and develope software solutions NET, SQL Server, HTML, CSS, JavaScript, and C#/VB.Net",
+        "Develope, refine, and tune integrations 'twixt applications.",
+      ],
+    },
+  ],
 
   FullStackProject: {
     description:
