@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { TypingText } from "../../utils/CustomTexts";
 import { staggerContainer } from "../../utils/motions";
 import Styles from "../../styles";
+import Portfolio from "./Portfolio";
+
 
 export default function Projects() {
   return (
@@ -25,6 +27,7 @@ export default function Projects() {
         </div>
       </motion.div>
       <div className={`${Styles.innerPadding} w-full`}>
+        <Portfolio/>
         <PostProject />
         <WeatherApp />
         <JewelryProject />

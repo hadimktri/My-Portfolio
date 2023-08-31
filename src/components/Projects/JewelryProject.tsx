@@ -5,10 +5,18 @@ import Styles from "../../styles";
 export default function JewelryProject() {
   return (
     <div className={`${Styles.flexCenter} flex-col gap-5`}>
-      <div className="mt-16 lg:w-9/12 ">
-        <div className="flex">
+      <div className="mt-16 lg:w-9/12">
+        <div className="flex gap-3 mb-12 lg:-ml-20">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />
-          <h2 className="text-lg font-bold  ">Jewelry Project</h2>
+          <h2 className="text-lg font-bold">Jewelry Project</h2>
+          <div className=" hover:scale-125">
+            <a
+              href="https://github.com/hadimktri/NODE_MongoDb_Express_Passport-Google_Ejs"
+              target="_blank"
+            >
+              <TbBrandGithub size={25} />
+            </a>
+          </div>
         </div>
         <img
           src="src/assets/jewelry.jpg"
@@ -18,19 +26,7 @@ export default function JewelryProject() {
       </div>
       <div className="mt-8 flex flex-col lg:w-9/12 md:flex-row gap-4">
         <div className="md:w-1/2 flex flex-col gap-3">
-          <div className="flex gap-2">
-            <div className=" hover:scale-125">
-              <a
-                href="https://github.com/hadimktri/NODE_MongoDb_Express_Passport-Google_Ejs"
-                target="_blank"
-              >
-                <TbBrandGithub size={25} />
-              </a>
-            </div>
-            <h2 className="text-xl font-bold ">
-              Technologies used in this app
-            </h2>
-          </div>
+          <h2 className="text-xl font-bold ">Technologies used in this app</h2>
           <h5>
             Front-End: <span className={Styles.teal}> EJS </span>
           </h5>

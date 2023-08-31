@@ -4,11 +4,16 @@ import Styles from "../../styles";
 
 export default function PostProject() {
   return (
-    <div className={`${Styles.flexCenter} flex-col gap-4`}>
-      <div className="relative lg:w-9/12">
-        <div className="flex mb-5">
+    <div className={`${Styles.flexCenter} flex-col gap-5`}>
+      <div className="relative mt-16 lg:w-9/12 ">
+        <div className="flex gap-3 mb-12 lg:-ml-20">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />
-          <h2 className="text-lg font-bold  ">Full-Stack Project</h2>
+          <h2 className="text-lg font-bold">Full-Stack Project</h2>
+          <div className=" hover:scale-125">
+            <a href="https://github.com/hadimktri/Full-Stack" target="_blank">
+              <TbBrandGithub size={25} />
+            </a>
+          </div>
         </div>
         <img
           src="src/assets/p-1-w.jpg"
@@ -18,21 +23,12 @@ export default function PostProject() {
         <img
           src="src/assets/p-1.jpg"
           alt="project-1"
-          className="rounded absolute z-20 top-32 mt-11 md:-right-20 md:mr-10"
+          className="rounded absolute z-20 top-40 mt-11 md:-right-20 md:mr-10"
         />
       </div>
       <div className="mt-40 flex flex-col md:flex-row justify-between gap-5 lg:w-9/12">
         <div className="md:w-1/2 flex flex-col gap-3">
-          <div className="flex gap-2">
-            <div className=" hover:scale-125">
-              <a href="https://github.com/hadimktri/Full-Stack" target="_blank">
-                <TbBrandGithub size={25} />
-              </a>
-            </div>
-            <h2 className="text-xl font-bold ">
-              Technologies used in this app
-            </h2>
-          </div>
+          <h2 className="text-xl font-bold ">Technologies used in this app</h2>
           <h5>
             Front-End: <span className={Styles.teal}> React </span>
             <span className="text-sm">
