@@ -1,8 +1,9 @@
 import { createContext } from "react";
-import Content from "./components/Content";
+import Contents from "./components/Contents";
 import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
 import useColorMode from "./hooks/useColorMode";
+import Styles from "./styles/index";
 
 export interface IThemeContext {
   colorMode: string;
@@ -20,13 +21,11 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ colorMode, toggleTheme }}>
-      <div className=" text-slate-700 dark:text-slate-300 w-full h-full overflow-hidden ">
+      <div className={`${Styles.primary} w-full h-full overflow-hidden`}>
         <NavBar />
-        <div
-          className="flex"
-        >
+        <div className={`${Styles.gradient} flex`}>
           <SideBar />
-          <Content />
+          <Contents />
         </div>
       </div>
     </ThemeContext.Provider>
@@ -34,4 +33,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,6 +1,6 @@
 import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb";
 import { motion } from "framer-motion";
-import { navVariants } from "../utils/motion";
+import { navVariants } from "../utils/motions";
 export default function SideBar() {
   return (
     <motion.div

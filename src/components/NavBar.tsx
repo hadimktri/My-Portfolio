@@ -1,15 +1,22 @@
-import { TbMenu2, TbMoon, TbSunHigh, TbX } from "react-icons/tb";
+import { TbHomeUp, TbMenu2, TbMoon, TbSunHigh, TbX } from "react-icons/tb";
 import { motion } from "framer-motion";
-import { navVariants } from '../utils/motion';
+import { navVariants } from "../utils/motions";
 import Strings from "../Shared/Strings";
 import { useState, useContext } from "react";
 import { ThemeContext } from "../App";
+import Styles from "../styles";
 
 export default function NavBar() {
   const { colorMode, toggleTheme } = useContext(ThemeContext);
   const [open, setOpen] = useState(false);
+  const [logo, setLogo] = useState(false);
+
   const handleBurger = () => {
     setOpen((prev) => !prev);
+  };
+
+  const handleLogo = (el: boolean) => {
+    setLogo(el);
   };
 
   return (
@@ -17,15 +24,18 @@ export default function NavBar() {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="w-full flex justify-between fixed z-50 tracking-wide
-      bg-slate-200 dark:bg-gradient-to-r from-[#0a1526] from 5% via-[#0a244b] via-30% to-[#0a1526] to-90%"
+      className={`${Styles.gradient} w-full flex justify-between fixed z-50 tracking-wide`}
     >
-      <div className="h-20 w-24 flex justify-center">
+      <div
+        className="h-20 w-24 flex justify-center"
+        onMouseOver={() => handleLogo(true)}
+        onMouseLeave={() => handleLogo(false)}
+      >
         <a
           className="font-bold text-3xl self-center ml-[-24px] md:ml-0 mt-1 hover:scale-125"
           href="#Home"
         >
-          H
+          {!logo ? "H" : <TbHomeUp size={25} />}
         </a>
       </div>
       <div className="flex my-5 md:my-0 md:mr-14 md:items-center ">
@@ -49,6 +59,7 @@ export default function NavBar() {
           {Strings.navList.map((nav, idx) => (
             <li
               key={idx}
+              onClick={handleBurger}
               className=" text-sm md:text-base hover:border-b-[1px] mt-2 hover:scale-110 border-[#334155] dark:border-[#cbd5e1]"
             >
               <a href={`#${nav}`}>{nav}</a>

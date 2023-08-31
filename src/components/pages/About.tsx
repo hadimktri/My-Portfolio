@@ -6,37 +6,18 @@ import {
   TbBrandTailwind,
   TbBrandMantine,
 } from "react-icons/tb";
-
 import Strings from "../../Shared/Strings";
 import { BiLogoReact } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
-
 import { motion } from "framer-motion";
-import { TypingText } from "../../utils/CustomTexts";
-
-import { fadeIn, staggerContainer } from "../../utils/motion";
+import { fadeIn } from "../../utils/motions";
+import Animate from "../anim/Animate";
+import Styles from "../../styles";
 
 export default function About() {
   return (
-    <motion.div
-      variants={staggerContainer(0, 0)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className="px-4 w-full mt-40 md:ml-40 md:w-3/4 flex flex-col items-center "
-    >
-      <div className="flex items-center self-start">
-        <h2 className="md:text-xl">
-          <span className=" text-teal-600 dark:text-teal-500 ">01-</span>
-        </h2>
-        <TypingText title={`${Strings.about.link}`} textStyles="md:text-xl" />
-        <div className=" border-b-[1px] border-gray-700 w-32 m-3 mb-1" />
-        <div className="w-1 h-1 bg-teal-600 rounded-full mt-2" />
-      </div>
-      <div
-        className="mt-10 flex flex-col items-center gap-5 md:w-4/5
-       lg:flex-row-reverse lg:items-start xl:w-3/4"
-      >
+    <Animate title="About Me" number={1}>
+      <div className="flex flex-col lg:flex-row-reverse items-center md:items-start md:justify-between gap-5 ">
         <motion.img
           variants={fadeIn("up", "tween", 0.3, 1)}
           src="src/assets/hadi.jpg"
@@ -47,20 +28,18 @@ export default function About() {
         />
         <motion.div
           variants={fadeIn("up", "tween", 0.2, 0.8)}
-          className=" mt-10 flex flex-col gap-5"
+          className=" flex flex-col gap-5"
         >
           <div>
-            <h2 className="text-slate-700 dark:text-slate-300 text-2xl font-bold">
-              {Strings.about.name}
-            </h2>
-            <h2 className="text-xl text-teal-600 dark:text-teal-500 font-bold flex mt-4">
+            <h2 className="text-2xl font-bold">{Strings.about.name}</h2>
+            <h2 className={`${Styles.teal} text-xl font-bold flex mt-4`}>
               {Strings.about.title}
             </h2>
           </div>
-          <h2 className="sm:w-3/4 md:w-full">{Strings.about.desc}</h2>
-          <h2 className="text-slate-700 dark:text-slate-300 font-bold">
-            {Strings.about.skills}
+          <h2 className={`${Styles.secondary} lg:w-4/5`}>
+            {Strings.about.desc}
           </h2>
+          <h2 className=" font-bold">{Strings.about.skills}</h2>
           <div className="flex justify-between w-4/5">
             <ul className="flex flex-col gap-2">
               <li className="flex gap-1 ">
@@ -81,8 +60,8 @@ export default function About() {
                 <TbBrandJavascript color="#facc15" size={22} />
                 <span>JavaScript</span>
               </li>
-              <li className="flex gap-2">
-                <FaNodeJs color="green" size={22} />
+              <li className="flex gap-1">
+                <FaNodeJs color="#16a34a" size={22} />
                 <span>Node Js</span>
               </li>
               <li className="flex gap-1 ">
@@ -104,7 +83,7 @@ export default function About() {
           </div>
         </motion.div>
       </div>
-      <div id="Education" />
-    </motion.div>
+      <div id="Education" className="h-24" />
+    </Animate>
   );
 }
