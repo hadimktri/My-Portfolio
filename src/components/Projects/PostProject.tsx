@@ -4,13 +4,17 @@ import Styles from "../../styles";
 
 export default function PostProject() {
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className={`${Styles.flexCenter} flex-col gap-4`}>
       <div className="relative lg:w-9/12">
         <div className="flex mb-5">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />
           <h2 className="text-lg font-bold  ">Full-Stack Project</h2>
         </div>
-        <img src="src/assets/p-1-w.jpg" alt="project-1" className="rounded md:-ml-10" />
+        <img
+          src="src/assets/p-1-w.jpg"
+          alt="project-1"
+          className="rounded md:-ml-10"
+        />
         <img
           src="src/assets/p-1.jpg"
           alt="project-1"

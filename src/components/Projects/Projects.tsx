@@ -9,7 +9,7 @@ import Styles from "../../styles";
 
 export default function Projects() {
   return (
-    <div className="w-full flex flex-col items-center ">
+    <div className={`${Styles.flexCenter} flex-col w-full`}>
       <motion.div
         variants={staggerContainer(0, 0)}
         initial="hidden"
@@ -17,7 +17,7 @@ export default function Projects() {
         viewport={{ once: false, amount: 0.25 }}
         className="w-full flex"
       >
-        <div className="md:text-xl flex self-start items-center">
+        <div className={`${Styles.flexCenter} md:text-xl`}>
           <span className={Styles.teal}>3-</span>
           <TypingText title="Projects" />
           <div className=" border-b-[1px] border-gray-700 w-32 m-3 mb-1" />

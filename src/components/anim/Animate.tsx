@@ -19,9 +19,9 @@ export default function Animate({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="w-full flex flex-col items-center justify-center "
+      className={`${Styles.flexCenter} w-full flex-col`}
     >
-      <div className="md:text-xl flex self-start items-center">
+      <div className={`${Styles.flexCenter} md:text-xl flex self-start `}>
         <span className={Styles.teal}>{number}-</span>
         <TypingText title={title} />
         <div className=" border-b-[1px] border-gray-700 w-32 m-3 mb-1" />
@@ -30,7 +30,7 @@ export default function Animate({
 
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 0.8)}
-        className={`${Styles.innerPadding} w-full lg:w-9/12`}
+        className={`${Styles.innerPadding} w-full lg:w-10/12`}
       >
         {children}
       </motion.div>

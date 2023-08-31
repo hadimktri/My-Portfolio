@@ -4,7 +4,7 @@ import Styles from "../../styles";
 
 export default function JewelryProject() {
   return (
-    <div className="flex flex-col items-center gap-5 ">
+    <div className={`${Styles.flexCenter} flex-col gap-5`}>
       <div className="mt-16 lg:w-9/12 ">
         <div className="flex">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />

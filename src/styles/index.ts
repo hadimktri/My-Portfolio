@@ -7,12 +7,12 @@ const Styles = {
   xPaddings: "sm:px-16 px-6",
   topPaddings: "sm:pt-16 xs:pt-8 pt-12",
   bottomPaddings: "sm:pb-16 xs:pb-8 pb-12",
+  contentsPadding: "pt-16 md:pt-28",
+  innerPadding: "py-8 md:py-16",
 
-  flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-start items-start",
   flexEnd: "flex justify-end",
-  contentsPadding: " mt-16 md:mt-28",
-  innerPadding: "  my-8 md:my-16",
+  flexCenter: "flex justify-center items-center",
 
   gradient:
     "bg-gray-100 dark:bg-gradient-to-r from-[#0a1526] from 5% via-[#0a244b] via-30% to-[#0a1526] to-90%",

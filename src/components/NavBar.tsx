@@ -38,14 +38,14 @@ export default function NavBar() {
           {!logo ? "H" : <TbHomeUp size={25} />}
         </a>
       </div>
-      <div className="flex my-5 md:my-0 md:mr-14 md:items-center ">
+      <div className={`${Styles.flexCenter} my-5 md:my-0 md:mr-14`}>
         <ul
           className={` ${!open && "hidden"} w-20 flex flex-col gap-1 md:flex 
            md:flex-row md:gap-6 md:w-full md:items-baseline`}
         >
           <li
             onClick={toggleTheme}
-            className=" w-fit cursor-pointer md:order-last md:self-center mt-1 p-1 rounded-full
+            className=" w-fit cursor-pointer md:order-last md:self-center p-1 rounded-full
              hover:border-[#2563eb] hover:dark:border-[#fcd34d] border-transparent border hover:border-current"
           >
             <div>
@@ -77,7 +77,7 @@ export default function NavBar() {
         </ul>
         <div
           onClick={handleBurger}
-          className="md:hidden w-12 ml-4 cursor-pointer"
+          className="md:hidden w-12 ml-4 cursor-pointer self-start"
         >
           {open ? <TbX size={25} /> : <TbMenu2 size={25} />}
         </div>

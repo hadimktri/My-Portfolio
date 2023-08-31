@@ -49,7 +49,7 @@ export default {
     },
     {
       id: 2,
-      title: "Junior Frontend Developer at Varanegar Novin.",
+      title: "Junior Developer at Varanegar Novin.",
       year: "October 2017 – February 2019",
       desc: "Assisted Developers in creating and maintaing web applications, to increase user engagement and user experience improvement.",
       descList: [

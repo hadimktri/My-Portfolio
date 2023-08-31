@@ -17,7 +17,9 @@ import Styles from "../../styles";
 export default function About() {
   return (
     <Animate title="About Me" number={1}>
-      <div className="flex flex-col lg:flex-row-reverse items-center md:items-start md:justify-between gap-5 ">
+      <div
+        className={`${Styles.flexCenter} flex-col lg:flex-row-reverse  lg:items-start md:justify-between gap-5 `}
+      >
         <motion.img
           variants={fadeIn("up", "tween", 0.3, 1)}
           src="src/assets/hadi.jpg"

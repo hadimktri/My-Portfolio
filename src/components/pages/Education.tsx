@@ -14,7 +14,7 @@ export default function Education() {
                 <RiArrowDropRightLine size={25} color="#2dd4bf" />
                 <h2 className="font-extrabold">{item.title}</h2>
               </div>
-              <h2 className={`${Styles.secondary} ml-8  lg:mr-12`}>{item.year}</h2>
+              <h2 className={`${Styles.secondary} ml-8 md:ml-0 lg:mr-8`}>{item.year}</h2>
             </div>
             <h2 className={`${Styles.secondary} ml-8`}>{item.school}</h2>
           </div>
