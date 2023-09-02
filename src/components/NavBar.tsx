@@ -5,11 +5,14 @@ import Strings from "../Shared/Strings";
 import { useState, useContext } from "react";
 import { ThemeContext } from "../App";
 import Styles from "../styles";
+import useScrollDirection from "../hooks/useScrollDirection";
 
 export default function NavBar() {
   const { colorMode, toggleTheme } = useContext(ThemeContext);
   const [open, setOpen] = useState(false);
   const [logo, setLogo] = useState(false);
+
+  const scrollDirection = useScrollDirection();
 
   const handleBurger = () => {
     setOpen((prev) => !prev);
@@ -24,7 +27,7 @@ export default function NavBar() {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${Styles.gradient} w-full flex justify-between fixed z-50 tracking-wide`}
+      className={`${Styles.gradient} ${ scrollDirection === "down" ? "-top-20" : "top-0"} w-full flex justify-between fixed z-50 tracking-wide`}
     >
       <div
         className="h-20 w-24 flex justify-center"

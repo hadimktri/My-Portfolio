@@ -15,16 +15,16 @@ const Styles = {
   flexCenter: "flex justify-center items-center",
 
   gradient:
-    "bg-gray-100 dark:bg-gradient-to-r from-[#0a1526] from 5% via-[#0a244b] via-30% to-[#0a1526] to-90%",
+    "bg-gray-100 dark:bg-gradient-to-r from-gray-950 from 5% via-gray-800 via-30% to-gray-950 to-90%",
 
   textGradient:
-    "text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-purple-800 to-pink-700",
+    "text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-purple-800 to-pink-700",
 
   primary: "text-gray-700 dark:text-gray-300",
 
   secondary: "text-gray-500 dark:text-gray-400",
 
-  teal: "text-teal-600 dark:text-teal-500",
+  teal: "text-teal-600 dark:text-teal-600",
 };
 
 export default Styles;

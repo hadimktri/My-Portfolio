@@ -1,6 +1,6 @@
 import { TbBrandGithub, TbBrandLinkedin, TbHomeUp } from "react-icons/tb";
 import { MdOutlineMail } from "react-icons/md";
-import Animate from "../anim/Animate";
+import Animate from "../../utils/Animate";
 import Styles from "../../styles";
 
 export default function ContactMe() {
@@ -8,7 +8,7 @@ export default function ContactMe() {
     <Animate title="Contact Me" number={5}>
       <div className="text-base flex flex-col gap-6 lg:mr-20">
         <a
-          className=" hover:scale-110  flex  gap-2"
+          className=" hover:scale-110  flex  gap-2 w-fit"
           href="mailto:hadimokhtr@gmail.com"
           target="_blank"
         >
@@ -18,7 +18,7 @@ export default function ContactMe() {
           </h2>
         </a>
         <a
-          className=" hover:scale-110 flex gap-2"
+          className=" hover:scale-110 flex gap-2 w-fit"
           href="https://github.com/hadimktri/"
           target="_blank"
         >
@@ -28,7 +28,7 @@ export default function ContactMe() {
           </h2>
         </a>
         <a
-          className=" hover:scale-110  flex gap-2"
+          className=" hover:scale-110  flex gap-2 w-fit"
           href="https://www.linkedin.com/in/hadimokhtari/"
           target="_blank"
         >

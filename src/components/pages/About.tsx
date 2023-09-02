@@ -8,10 +8,10 @@ import {
 } from "react-icons/tb";
 import Strings from "../../Shared/Strings";
 import { BiLogoReact } from "react-icons/bi";
+import Animate from "../../utils/Animate";
 import { FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motions";
-import Animate from "../anim/Animate";
 import Styles from "../../styles";
 
 export default function About() {

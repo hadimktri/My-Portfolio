@@ -1,6 +1,6 @@
 import { RiArrowDropRightLine } from "react-icons/ri";
 import Strings from "../../Shared/Strings";
-import Animate from "../anim/Animate";
+import Animate from "../../utils/Animate";
 import Styles from "../../styles";
 
 export default function Education() {

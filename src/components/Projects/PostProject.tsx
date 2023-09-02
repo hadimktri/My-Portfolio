@@ -8,9 +8,9 @@ export default function PostProject() {
       <div className="relative mt-16 lg:w-9/12 ">
         <div className="flex gap-3 mb-12 lg:-ml-20">
           <RiArrowDropRightLine size={25} color="#2dd4bf" />
-          <h2 className="text-lg font-bold">Full-Stack Project</h2>
+          <h2 className="text-lg font-bold">Full-Stack Post Blog App</h2>
           <div className=" hover:scale-125">
-            <a href="https://github.com/hadimktri/Full-Stack" target="_blank">
+            <a href="https://github.com/hadimktri/Full-Stack-Post-Blog-App" target="_blank">
               <TbBrandGithub size={25} />
             </a>
           </div>

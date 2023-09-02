@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
-import { TypingText } from "../../utils/CustomTexts";
-import { fadeIn, staggerContainer } from "../../utils/motions";
-import Styles from "../../styles";
+import { TypingText } from "./CustomTexts";
+import { fadeIn, staggerContainer } from "./motions";
+import Styles from "../styles";
 
 export default function Animate({
   children,

@@ -36,12 +36,22 @@ export default function Portfolio() {
           <h2 className="text-xl font-bold my-4 md:mt-0">About Coding</h2>
           <ul className="flex flex-col gap-3">
             <li>
-              <span className={Styles.teal}> Dark / light </span> theme is also
-              added for the convinience of the user.
-            </li>
-            <li>
               App is <span className={Styles.teal}>fully responsive</span> in
               mobile, tablet, pc, and larg screens.{" "}
+            </li>
+            <li>
+                            <span className={Styles.teal}>
+                Componet-based coding, Higher-Order components and Custom Hooks{" "}
+              </span>{" "}
+              are implemented in order to have a simple, efficient and reusable code.
+            </li>
+            <li>
+              <span className={Styles.teal}> Tailwind </span> is used to make
+              the styling easier and cleaner.{" "}
+            </li>
+            <li>
+              <span className={Styles.teal}> Dark / light </span> theme is also
+              added for the convinience of the user.
             </li>
           </ul>
         </div>

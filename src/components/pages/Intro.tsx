@@ -1,6 +1,5 @@
 import Strings from "../../Shared/Strings";
 import Styles from "../../styles";
-
 import { slideIn, staggerContainer, textVariant } from "../../utils/motions";
 import { motion } from "framer-motion";
 
@@ -13,7 +12,7 @@ export default function Intro() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className=" md:ml-8 md:mb-56"
+        className=" md:ml-8 lg:ml-16 md:mb-24"
       >
         <motion.h5 variants={textVariant(1.1)} className="text-lg">
           Hello, my name is

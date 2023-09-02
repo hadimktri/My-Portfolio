@@ -11,7 +11,7 @@ export default function JewelryProject() {
           <h2 className="text-lg font-bold">Jewelry Project</h2>
           <div className=" hover:scale-125">
             <a
-              href="https://github.com/hadimktri/NODE_MongoDb_Express_Passport-Google_Ejs"
+              href="https://github.com/hadimktri/full-stack-E-commerce"
               target="_blank"
             >
               <TbBrandGithub size={25} />

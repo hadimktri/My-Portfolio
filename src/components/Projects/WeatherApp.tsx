@@ -11,7 +11,7 @@ export default function WeatherApp() {
           <h2 className="text-lg font-bold">Weather App</h2>
           <div className=" hover:scale-125">
             <a
-              href="https://github.com/hadimktri/Weather-App_React_Typescript_Vite"
+              href="https://github.com/hadimktri/Weather-App"
               target="_blank"
             >
               <TbBrandGithub size={25} />
