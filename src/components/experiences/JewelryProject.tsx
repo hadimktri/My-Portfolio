@@ -19,7 +19,7 @@ export default function JewelryProject() {
           </div>
         </div>
         <img
-          src="src/assets/jewelry.jpg"
+          src="/jewelry.jpg"
           alt="project-1"
           className=" mt-5 rounded"
         />

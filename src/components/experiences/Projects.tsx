@@ -1,13 +1,11 @@
-import JewelryProject from ".././projects/JewelryProject";
-import PostProject from ".././projects/PostProject";
-import WeatherApp from ".././projects/WeatherApp";
-
 import { motion } from "framer-motion";
 import { TypingText } from "../../utils/CustomTexts";
 import { staggerContainer } from "../../utils/motions";
 import Styles from "../../styles";
 import Portfolio from "./Portfolio";
-
+import PostProject from "./PostProject";
+import WeatherApp from "./WeatherApp";
+import JewelryProject from "./JewelryProject";
 
 export default function Projects() {
   return (
@@ -27,7 +25,7 @@ export default function Projects() {
         </div>
       </motion.div>
       <div className={`${Styles.innerPadding} w-full`}>
-        <Portfolio/>
+        <Portfolio />
         <PostProject />
         <WeatherApp />
         <JewelryProject />

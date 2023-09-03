@@ -19,7 +19,7 @@ export default function WeatherApp() {
           </div>
         </div>
         <img
-          src="src/assets/weather.png"
+          src="/weather.png"
           alt="project-1"
           className=" mt-8 rounded"
         />

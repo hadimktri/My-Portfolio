@@ -16,12 +16,12 @@ export default function PostProject() {
           </div>
         </div>
         <img
-          src="src/assets/p-1-w.jpg"
+          src="/p-1-w.jpg"
           alt="project-1"
           className="rounded md:-ml-10"
         />
         <img
-          src="src/assets/p-1.jpg"
+          src="/p-1.jpg"
           alt="project-1"
           className="rounded absolute z-20 top-40 mt-11 md:-right-20 md:mr-10"
         />

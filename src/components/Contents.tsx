@@ -3,7 +3,8 @@ import About from "./pages/About";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import ContactMe from "./pages/ContactMe";
-import Projects from "./projects/Projects";
+import Projects from "./experiences/Projects";
+
 
 export default function Contents() {
   return (

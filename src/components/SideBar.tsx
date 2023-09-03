@@ -28,8 +28,8 @@ export default function SideBar() {
           <TbBrandLinkedin size={25} />
         </a>
         <div className={`${Styles.flexCenter} flex-col`}>
-          <div className="w-1 h-1 bg-teal-600 rounded-full ml-[0.5px]" />
-          <div className="h-[100px] border-r-[1px] border-slate-700" />
+          <div className="w-1 h-1 bg-gray-600 rounded-full ml-[0.5px]" />
+          <div className="h-[100px] border-r-[0px] border-slate-700" />
         </div>
       </div>
     </motion.div>

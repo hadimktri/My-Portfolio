@@ -22,7 +22,7 @@ export default function About() {
       >
         <motion.img
           variants={fadeIn("up", "tween", 0.3, 1)}
-          src="src/assets/hadi.jpg"
+          src="/hadi.jpg"
           alt="hadi"
           className="object-cover w-60 h-60 rounded-full border-solid border-8 p-2 box-content 
           border-teal-700 border-opacity-30
