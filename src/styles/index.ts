@@ -1,4 +1,4 @@
-const Styles = {
+export default {
   innerWidth: "2xl:max-w-[1280px] w-full",
   interWidth: "lg:w-[80%] w-[100%]",
 
@@ -15,16 +15,14 @@ const Styles = {
   flexCenter: "flex justify-center items-center",
 
   gradient:
-    "bg-gray-100 dark:bg-gradient-to-r from-gray-950 from 5% via-gray-800 via-30% to-gray-950 to-90%",
+    "bg-slate-100 dark:bg-gradient-to-r from-slate-950 from 5% via-slate-800 via-30% to-slate-950 to-90%",
 
   textGradient:
-    "text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-purple-800 to-pink-700",
+    "text-transparent bg-clip-text bg-gradient-to-r from-[#847ba1] via-[#dbd6ec] via-[#dbd6ec] to-[#847ba1]",
 
-  primary: "text-gray-700 dark:text-gray-300",
+  primary: "text-zinc-600 dark:text-zinc-300",
 
-  secondary: "text-gray-500 dark:text-gray-400",
+  secondary: "text-zinc-500 dark:text-zinc-400",
 
-  teal: "text-teal-600 dark:text-teal-600",
+  highLight: "text-[#6a5cad] dark:text-[#847ba1]",
 };
-
-export default Styles;

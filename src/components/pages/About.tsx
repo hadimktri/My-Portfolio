@@ -12,21 +12,20 @@ import Animate from "../../utils/Animate";
 import { FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motions";
-import Styles from "../../styles";
+import S from "../../styles";
 
 export default function About() {
   return (
     <Animate title="About Me" number={1}>
       <div
-        className={`${Styles.flexCenter} flex-col lg:flex-row-reverse  lg:items-start md:justify-between gap-5 `}
+        className={`${S.flexCenter} flex-col lg:flex-row-reverse  lg:items-start md:justify-between gap-5 `}
       >
         <motion.img
           variants={fadeIn("up", "tween", 0.3, 1)}
           src="/hadi.jpg"
           alt="hadi"
           className="object-cover w-60 h-60 rounded-full border-solid border-8 p-2 box-content 
-          border-teal-700 border-opacity-30
-          dark:border-teal-200 dark:border-opacity-30"
+          border-[#bca2da] border-opacity-30"
         />
         <motion.div
           variants={fadeIn("up", "tween", 0.2, 0.8)}
@@ -34,13 +33,11 @@ export default function About() {
         >
           <div>
             <h2 className="text-2xl font-bold">{Strings.about.name}</h2>
-            <h2 className={`${Styles.teal} text-xl font-bold flex mt-4`}>
+            <h2 className={`${S.highLight} text-xl font-bold flex mt-4`}>
               {Strings.about.title}
             </h2>
           </div>
-          <h2 className={`${Styles.secondary} lg:w-4/5`}>
-            {Strings.about.desc}
-          </h2>
+          <h2 className={`${S.secondary} lg:w-4/5`}>{Strings.about.desc}</h2>
           <h2 className=" font-bold">{Strings.about.skills}</h2>
           <div className="flex justify-between w-4/5">
             <ul className="flex flex-col gap-2">

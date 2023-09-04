@@ -1,7 +1,7 @@
 import { TbBrandGithub, TbBrandLinkedin, TbHomeUp } from "react-icons/tb";
 import { MdOutlineMail } from "react-icons/md";
 import Animate from "../../utils/Animate";
-import Styles from "../../styles";
+import S from "../../styles";
 
 export default function ContactMe() {
   return (
@@ -13,7 +13,7 @@ export default function ContactMe() {
           target="_blank"
         >
           <MdOutlineMail size={25} />
-          <h2 className={Styles.secondary}>
+          <h2 className={S.secondary}>
             Email: hadimokhtr@gmail.com{" "}
           </h2>
         </a>
@@ -23,7 +23,7 @@ export default function ContactMe() {
           target="_blank"
         >
           <TbBrandGithub size={25} />
-          <h2 className={Styles.secondary}>
+          <h2 className={S.secondary}>
             Github: https://github.com/hadimktri{" "}
           </h2>
         </a>
@@ -33,7 +33,7 @@ export default function ContactMe() {
           target="_blank"
         >
           <TbBrandLinkedin size={25} />
-          <h2 className={Styles.secondary}>
+          <h2 className={S.secondary}>
             Linkedin: www.linkedin.com/in/hadimokhtari
           </h2>
         </a>

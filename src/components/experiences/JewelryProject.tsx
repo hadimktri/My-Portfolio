@@ -1,13 +1,13 @@
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { TbBrandGithub } from "react-icons/tb";
-import Styles from "../../styles";
+import S from "../../styles";
 
 export default function JewelryProject() {
   return (
-    <div className={`${Styles.flexCenter} flex-col gap-5`}>
+    <div className={`${S.flexCenter} flex-col gap-5`}>
       <div className="mt-16 lg:w-9/12">
-        <div className="flex gap-3 mb-12 lg:-ml-20">
-          <RiArrowDropRightLine size={25} color="#2dd4bf" />
+        <div className="flex gap-3 mb-12 lg:-ml-20 items-center">
+          <RiArrowDropRightLine size={30} color="#71717a"/>
           <h2 className="text-lg font-bold">Jewelry Project</h2>
           <div className=" hover:scale-125">
             <a
@@ -28,19 +28,19 @@ export default function JewelryProject() {
         <div className="md:w-1/2 flex flex-col gap-3">
           <h2 className="text-xl font-bold ">Technologies used in this app</h2>
           <h5>
-            Front-End: <span className={Styles.teal}> EJS </span>
+            Front-End: <span className={S.highLight}> EJS </span>
           </h5>
           <h5>
-            Back-End: <span className={Styles.teal}> Node js </span>
+            Back-End: <span className={S.highLight}> Node js </span>
           </h5>
           <h5>
-            Styling: <span className={Styles.teal}> Bootstrap </span>
+            Styling: <span className={S.highLight}> Bootstrap </span>
           </h5>
           <h5>
-            DataBase: <span className={Styles.teal}> MongoDb </span>
+            DataBase: <span className={S.highLight}> MongoDb </span>
           </h5>
           <h5>
-            Authentication: <span className={Styles.teal}> Passport </span>
+            Authentication: <span className={S.highLight}> Passport </span>
           </h5>
         </div>
         <div className="md:w-1/2 ">
@@ -48,7 +48,7 @@ export default function JewelryProject() {
           <ul className="flex flex-col gap-3">
             <li>
               Registered user is able to{" "}
-              <span className={Styles.teal}>
+              <span className={S.highLight}>
                 {" "}
                 Select, Add to card, delete, order{" "}
               </span>{" "}
@@ -56,11 +56,11 @@ export default function JewelryProject() {
             </li>
             <li>
               Users will be able to register with email and password and also
-              just with a <span className={Styles.teal}> Gmail </span> account.
+              just with a <span className={S.highLight}> Gmail </span> account.
             </li>
             <li>
               User will be able to{" "}
-              <span className={Styles.teal}> Edit profile </span> with{" "}
+              <span className={S.highLight}> Edit profile </span> with{" "}
             </li>
           </ul>
         </div>

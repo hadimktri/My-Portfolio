@@ -2,9 +2,9 @@ import { TbHomeUp, TbMenu2, TbMoon, TbSunHigh, TbX } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motions";
 import Strings from "../Shared/Strings";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { ThemeContext } from "../App";
-import Styles from "../styles";
+import S from "../styles";
 import useScrollDirection from "../hooks/useScrollDirection";
 
 export default function NavBar() {
@@ -22,12 +22,18 @@ export default function NavBar() {
     setLogo(el);
   };
 
+  useEffect(() => {
+    setOpen(false);
+  }, [scrollDirection]);
+
   return (
     <motion.nav
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${Styles.gradient} ${ scrollDirection === "down" ? "-top-20" : "top-0"} w-full flex justify-between fixed z-50 tracking-wide`}
+      className={`${S.gradient} ${
+        scrollDirection === "down" ? "-top-20" : "top-0"
+      } w-full flex justify-between fixed z-50 tracking-wide`}
     >
       <div
         className="h-20 w-24 flex justify-center"
@@ -41,7 +47,7 @@ export default function NavBar() {
           {!logo ? "H" : <TbHomeUp size={25} />}
         </a>
       </div>
-      <div className={`${Styles.flexCenter} my-5 md:my-0 md:mr-14`}>
+      <div className={`${S.flexCenter} my-5 md:my-0 md:mr-14`}>
         <ul
           className={` ${!open && "hidden"} w-20 flex flex-col gap-1 md:flex 
            md:flex-row md:gap-6 md:w-full md:items-baseline`}

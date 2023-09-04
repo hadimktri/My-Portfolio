@@ -1,13 +1,13 @@
 import { RiArrowDropRightLine } from "react-icons/ri";
 import { TbBrandGithub } from "react-icons/tb";
-import Styles from "../../styles";
+import S from "../../styles";
 
 export default function WeatherApp() {
   return (
-    <div className={`${Styles.flexCenter} flex-col gap-5 `}>
+    <div className={`${S.flexCenter} flex-col gap-5 `}>
       <div className="mt-16 lg:w-9/12">
-        <div className="flex gap-3 mb-12 lg:-ml-20">
-          <RiArrowDropRightLine size={25} color="#2dd4bf" />
+        <div className="flex gap-3 mb-12 lg:-ml-20 items-center">
+          <RiArrowDropRightLine size={30} color="#71717a" />
           <h2 className="text-lg font-bold">Weather App</h2>
           <div className=" hover:scale-125">
             <a
@@ -29,15 +29,15 @@ export default function WeatherApp() {
           <h2 className="text-xl font-bold ">Technologies used in this app</h2>
           <h5>
             Front-End:
-            <span className={Styles.teal}> React </span>
+            <span className={S.highLight}> React </span>
           </h5>
           <h5>
             Styling:
-            <span className={Styles.teal}> CSS </span>
+            <span className={S.highLight}> CSS </span>
           </h5>
           <h5>
             Synchronized weather data fetched with the help of{" "}
-            <span className={Styles.teal}>
+            <span className={S.highLight}>
               {" "}
               Rapid Api and Open weather Api{" "}
             </span>{" "}

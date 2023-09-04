@@ -3,7 +3,7 @@ import Contents from "./components/Contents";
 import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
 import useColorMode from "./hooks/useColorMode";
-import Styles from "./styles/index";
+import S from "./styles/index";
 
 export interface IThemeContext {
   colorMode: string;
@@ -21,9 +21,9 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ colorMode, toggleTheme }}>
-      <div className={`${Styles.primary} w-full h-full overflow-hidden`}>
+      <div className={`${S.primary} w-full h-full overflow-hidden`}>
         <NavBar />
-        <div className={`${Styles.gradient} flex`}>
+        <div className={`${S.gradient} flex`}>
           <SideBar />
           <Contents />
         </div>

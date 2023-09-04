@@ -1,5 +1,5 @@
 import Strings from "../../Shared/Strings";
-import Styles from "../../styles";
+import S from "../../styles";
 import { slideIn, staggerContainer, textVariant } from "../../utils/motions";
 import { motion } from "framer-motion";
 
@@ -19,13 +19,13 @@ export default function Intro() {
         </motion.h5>
         <motion.h1
           variants={textVariant(1.2)}
-          className={`${Styles.textGradient} font-extrabold text-5xl md:text-6xl mt-6`}
+          className={`${S.textGradient} font-extrabold text-5xl md:text-6xl mt-6 w-fit`}
         >
           Hadi Mokhtari.
         </motion.h1>
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className={`${Styles.innerPadding} relative`}
+          className={`${S.innerPadding} relative`}
         >
           <h1 className=" text-slate-700 dark:text-slate-200 font-bold text-3xl md:text-4xl">
             I build things for the web
