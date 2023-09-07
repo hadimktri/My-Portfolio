@@ -25,7 +25,8 @@ export default function About() {
           src="/hadi.jpg"
           alt="hadi"
           className="object-cover w-60 h-60 rounded-full border-solid border-8 p-2 box-content 
-          border-[#bca2da] border-opacity-30"
+          dark:border-[#847ba1] dark:border-opacity-20
+          border-[#6a5cad] border-opacity-10 "
         />
         <motion.div
           variants={fadeIn("up", "tween", 0.2, 0.8)}

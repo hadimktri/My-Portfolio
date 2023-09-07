@@ -77,7 +77,7 @@ export default function NavBar() {
           <li>
             <a
               className="text-sm md:text-base hover:border-b-[1px] border-[#334155] dark:border-[#cbd5e1]"
-              href="src/assets/Resume-Hadi Mokhtari.pdf"
+              href="/Resume-Hadi Mokhtari.pdf"
               target="_blank"
             >
               Resume
