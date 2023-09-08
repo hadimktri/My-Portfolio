@@ -8,6 +8,7 @@ import {
 } from "react-icons/tb";
 import Strings from "../../Shared/Strings";
 import { BiLogoReact } from "react-icons/bi";
+import { SiPhp } from "react-icons/si";
 import Animate from "../../utils/Animate";
 import { FaNodeJs } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -65,11 +66,17 @@ export default function About() {
                 <span>Node Js</span>
               </li>
               <li className="flex gap-1 ">
-                <TbBrandNextjs color="black" size={22} />
-                <span>Next Js</span>
+                <SiPhp color="#6a5cad" size={25} />
+                <span>php</span>
               </li>
             </ul>
             <ul className="flex flex-col gap-2">
+              <li className="flex gap-1 ">
+                <div className=" text-black dark:text-slate-500">
+                  <TbBrandNextjs size={22} />
+                </div>
+                <span>Next Js</span>
+              </li>
               <li className="flex gap-1">
                 <TbBrandTailwind color="#0ea5e9" size={22} />
                 <span>Tailwind</span>
